@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "525953900024",
+    "project_id": "connect-fe33f",
+    "storage_bucket": "connect-fe33f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525953900024:android:a3350663ddeb5a96c9ca0d",
+        "android_client_info": {
+          "package_name": "com.example.connect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdJCk-HCJ155Til7ERIHQyQJ0nNJ4HXDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

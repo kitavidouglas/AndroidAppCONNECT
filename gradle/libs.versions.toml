@@ -1,0 +1,47 @@
+[versions]
+agp = "8.3.2"
+appcompatVersion = "1.6.1"
+coreKtx = "1.13.1"
+firebaseDatabaseVersion = "21.0.0"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.12.0"
+constraintlayout = "2.1.4"
+navigationFragment = "2.7.7"
+navigationUi = "2.7.7"
+activity = "1.9.0"
+googleServices = "4.4.1"
+firebaseAuth = "23.0.0"
+firebaseDatabase = "21.0.0"
+playServicesMaps = "18.2.0"
+googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
+playServicesLocation = "21.2.0"
+places = "3.4.0"
+firebaseStorage = "21.0.0"  # Added version for Google Play Services Maps
+
+[libraries]
+appcompat-v131 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+firebase-database-v2022 = { module = "com.google.firebase:firebase-database", version.ref = "firebaseDatabaseVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+google-services = { group = "com.google.gms", name = "google-services", version.ref = "googleServices" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+places = { group = "com.google.android.libraries.places", name = "places", version.ref = "places" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }  # Added Google Play Services Maps dependency
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+googleAndroidLibrariesMapsplatformSecretsGradlePlugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "googleAndroidLibrariesMapsplatformSecretsGradlePlugin" }
