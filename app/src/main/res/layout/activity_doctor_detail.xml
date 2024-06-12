@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="49dp"
+            android:layout_height="44dp"
+            android:contentDescription="@string/back"
+            android:padding="8dp"
+            android:src="@drawable/back" />
+
+        <!-- Doctor Info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/image_of_doctor"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/doc3"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circle_background" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Autumn Phillips"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/doctor_speciality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cardiologist"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey" />
+
+                <TextView
+                    android:id="@+id/doctor_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cardiology Center, Boston"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/doctor_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.7"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginEnd="4dp" />
+
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:numStars="5"
+
+                        android:progressTint="@color/orange"
+                        android:rating="4.7"
+                        android:scaleX="0.5"
+                        android:scaleY="0.5" />
+
+                    <TextView
+                        android:id="@+id/doctor_reviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(321 Reviews)"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey"
+                        android:layout_marginStart="4dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- About Section -->
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/about_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Highly qualified and specialized medical professional equipped with profound knowledge in their field..."
+            android:textSize="14sp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="4dp" />
+
+        <!-- Date Section -->
+        <TextView
+            android:id="@+id/date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Repeat for each date item -->
+                <TextView
+                    android:id="@+id/date_item_21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/date_item_background"
+                    android:padding="16dp"
+                    android:text="21\nMon"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/date_text_color"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/date_item_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/date_item_background"
+                    android:padding="16dp"
+                    android:text="22\nTue"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/date_text_color"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/date_item_23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/date_item_background"
+                    android:padding="16dp"
+                    android:text="23\nWed"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/date_text_color"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/date_item_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/date_item_background"
+                    android:padding="16dp"
+                    android:text="24\nThu"
+                    android:textAlignment="center"
+                    android:textColor="@color/date_text_color"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/date_item_25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/date_item_background"
+                    android:padding="16dp"
+                    android:text="25\nFri"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/date_text_color"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/date_item_26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/date_item_background"
+                    android:padding="16dp"
+                    android:text="26\nSat"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/date_text_color"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Time Section -->
+        <TextView
+            android:id="@+id/time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_marginTop="8dp"
+            android:rowCount="2">
+
+            <!-- Repeat for each time slot -->
+            <TextView
+                android:id="@+id/time_slot_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/time_slot_background"
+                android:padding="16dp"
+                android:text="10.00-10.30 AM"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/time_slot_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/time_slot_background"
+                android:padding="16dp"
+                android:text="10.30-11.00 AM"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/time_slot_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/time_slot_background"
+                android:padding="16dp"
+                android:text="11.00-11.30 AM"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/time_slot_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/time_slot_background"
+                android:padding="16dp"
+                android:text="11.30-12.00 AM"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/time_slot_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/time_slot_background"
+                android:padding="16dp"
+                android:text="12.00-12.30 AM"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/time_slot_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/time_slot_background"
+                android:padding="16dp"
+                android:text="13.00-13.30 AM"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:clickable="true"
+                android:focusable="true" />
+        </GridLayout>
+
+        <!-- Book Appointment Button -->
+        <Button
+            android:id="@+id/book_appointment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/green"
+            android:text="Book Appointment"
+            android:textColor="@color/white"
+            android:enabled="false" />
+    </LinearLayout>
+</ScrollView>

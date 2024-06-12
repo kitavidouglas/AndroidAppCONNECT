@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <!-- Doctor details section -->
+    <ImageView
+        android:id="@+id/doctorImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mzee"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/doctorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorImage"
+        android:text="Doctor Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/doctorSpecialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorName"
+        android:text="Doctor Specialty"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/doctorHospital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorSpecialty"
+        android:text="Doctor Hospital"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/doctorRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/doctorHospital"
+        android:text="Doctor Rating"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Appointment details section -->
+    <EditText
+        android:id="@+id/patientNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient Name"
+        android:layout_below="@id/doctorRating"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <EditText
+        android:id="@+id/appointmentDateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Date"
+        android:layout_below="@id/patientNameInput"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <EditText
+        android:id="@+id/appointmentTimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Appointment Time"
+        android:layout_below="@id/appointmentDateInput"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Appointment"
+        android:layout_below="@id/appointmentTimeInput"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"/>
+
+    <!-- Uber button -->
+    <Button
+        android:id="@+id/uberButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Uber Ride"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>
