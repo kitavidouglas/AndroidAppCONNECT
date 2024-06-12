@@ -2,7 +2,13 @@
 
 
 buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
     dependencies {
+        classpath("com.android.tools.build:gradle:8.0.0") // or the appropriate version
+        classpath(kotlin("gradle-plugin", version = "1.8.0")) // or the appropriate version
         classpath(libs.google.services)
 
     }
